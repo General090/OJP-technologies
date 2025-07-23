@@ -31,7 +31,7 @@ const Home = () => {
               REGISTER NOW!
             </button>
 
-            <Link href="/mission">
+            <Link to="/mission">
               <button className="bg-white text-[#133f51] py-3 px-6 rounded cursor-pointer">
                 Our Mission
               </button>
