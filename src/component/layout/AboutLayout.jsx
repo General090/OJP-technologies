@@ -22,7 +22,7 @@ const AboutLayout = ({ children }) => {
   return (
     <div>
       <nav className="flex item-center justify-between p-10">
-        <Link to="/about" className="flex items-center">
+        <Link to="/about">
           <img src={logo} className="w-42 lg:w-52" />
         </Link>
 

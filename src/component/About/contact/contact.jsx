@@ -4,6 +4,7 @@ import { IoMdMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoLocation } from "react-icons/io5";
 import emailjs from "@emailjs/browser";
+import Location from "./location"
 
 const Contact = () => {
   const form = useRef();
@@ -42,8 +43,8 @@ const Contact = () => {
 
   return (
     <AboutLayout>
-      <div className="flex items-center gap-5 px-16 pt-5 pb-20 bg-[#f5f5f5]">
-        <div className="w-[40%]">
+      <div className="md:flex items-center gap-5 px-5 lg:px-16 pt-5 pb-20 bg-[#f5f5f5]">
+        <div className="md:w-[40%]">
           <h1 className="font-bold text-xl pb-2 text-center">Contact Us</h1>
           <p className="mb-10">
             Email, call, or complete the form to get in touch with us.
@@ -67,20 +68,20 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="bg-white p-10 w-[60%] shadow-xl rounded-lg">
+        <div className="bg-white p-5 md:p-10 md:w-[60%] shadow-xl rounded-lg">
           <h1 className="font-bold text-xl pb-2">Get in Touch</h1>
           <p className="mb-10">
             We want to hear from you! You can reach us anytime.
           </p>
 
           <form ref={form} onSubmit={sendEmail}>
-            <div className="flex items-center gap-5 mb-5">
+            <div className="lg:flex items-center gap-5 mb-5">
               <div className="flex flex-col w-full">
                 <label className="pb-2">First Name</label>
                 <input
                   type="text"
                   name="first_name"
-                  className="border border-[#d1d5db] outline-none rounded-sm px-2 py-2"
+                  className="border border-[#d1d5db] outline-none rounded-sm mb-5 lg:mb-0 px-2 py-2"
                   placeholder="Enter your first name"
                 />
               </div>
@@ -122,6 +123,8 @@ const Contact = () => {
           </form>
         </div>
       </div>
+
+      <Location />
     </AboutLayout>
   );
 };

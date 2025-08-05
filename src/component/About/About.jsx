@@ -26,9 +26,9 @@ const About = () => {
               <button className="bg-[#97b088] text-[#1f324b] hover:bg-[#96c27d] px-7 py-3 rounded-lg">
                 Get Started
               </button>
-              <button className="bg-white text-[#1f324b] px-7 py-3 rounded-lg">
+              <Link to="/about-mission" className="bg-white text-[#1f324b] px-7 py-3 rounded-lg">
                 Our Mission
-              </button>
+              </Link>
             </div>
           </div>
 
