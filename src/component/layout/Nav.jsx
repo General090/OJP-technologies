@@ -23,9 +23,9 @@ const Nav = ({ children }) => {
   return (
     <div>
       <nav className="flex items-center justify-between px-4 lg:px-10 bg-white py-5 sticky top-0 z-50">
-        <div className="flex items-center">
+        <Link to="/" className="flex items-center">
           <img src={logo} className="w-42 lg:w-52" />
-        </div>
+        </Link>
 
         {/* Desktop view */}
         <div className="hidden lg:flex items-center space-x-8">
@@ -49,9 +49,9 @@ const Nav = ({ children }) => {
             })}
           </ul>
 
-          <button className="bg-[#133f51] text-white px-5 py-3 rounded">
+          <Link to="/register" className="bg-[#133f51] text-white px-5 py-3 rounded">
             REGISTER NOW
-          </button>
+          </Link>
         </div>
 
         <div className="lg:hidden block">
