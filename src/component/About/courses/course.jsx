@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Cyber from "../../assets/cyber.png";
-import Robot from "../../assets/robotics.png";
-import Roofing from "../../assets/roofing.png";
-import Web from "../../assets/web.png";
+import Cyber from "../../../assets/cyber.png";
+import Robot from "../../../assets/robotics.png";
+import Roofing from "../../../assets/roofing.png";
+import Web from "../../../assets/web.png";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { Link } from "react-router-dom"
@@ -85,7 +85,7 @@ const course = () => {
           <div className="md:w-1/2 bg-black text-white p-10 flex flex-col justify-center items-center text-center">
             <h2 className="text-green-400 font-bold text-2xl mb-4">{title}</h2>
             <p className="mb-6">{description}</p>
-            <Link className="bg-[#97b088] hover:bg-[#133f51] text-white px-5 py-2 rounded mb-4">
+            <Link to="/about-register" className="bg-[#97b088] hover:bg-[#133f51] text-white px-5 py-2 rounded-lg mb-4">
               {button}
             </Link>
 
@@ -110,6 +110,10 @@ const course = () => {
                 <IoIosArrowForward />
               </button>
             </div>
+
+            <Link to="/courses" className="absolute bottom-6 right-6 bg-[#97b088] hover:bg-[#133f51] text-white px-5 py-2 rounded-xl">
+              See More...
+            </Link>
           </div>
         </div>
       </div>

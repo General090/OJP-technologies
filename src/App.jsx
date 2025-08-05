@@ -5,7 +5,9 @@ import About from "./component/About/About"
 import FAQ from "./component/FAQ/FAQ";
 import Register from "./component/register/Register"
 import AboutMission from "./component/About/mision"
+import Courses from "./component/About/courses/myCourse"
 import Contact from "./component/About/contact/contact"
+import AboutRegister from "./component/About/register"
 
 
 function App() {
@@ -20,8 +22,10 @@ function App() {
 
         {/* About Us */}
         <Route path="/about" element={<About />} />
+        <Route path="/courses" element={<Courses />} />
         <Route path="/about-mission" element={<AboutMission />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about-register" element={<AboutRegister />} />
       </Routes>
     </>
   )

@@ -3,7 +3,7 @@ import Learn from "../../assets/learn.png";
 import Vid from "../../assets/vid.mp4";
 import { Link } from "react-router-dom"
 import Service from "./service"
-import Course from "./course";
+import Course from "./courses/course";
 
 const About = () => {
   return (
@@ -23,9 +23,9 @@ const About = () => {
               that meet the evolving needs of our clients.
             </p>
             <div className="flex items-center gap-5 text-lg">
-              <button className="bg-[#97b088] text-[#1f324b] hover:bg-[#96c27d] px-7 py-3 rounded-lg">
+              <Link to="/courses" className="bg-[#97b088] text-[#1f324b] hover:bg-[#96c27d] px-7 py-3 rounded-lg">
                 Get Started
-              </button>
+              </Link>
               <Link to="/about-mission" className="bg-white text-[#1f324b] px-7 py-3 rounded-lg">
                 Our Mission
               </Link>

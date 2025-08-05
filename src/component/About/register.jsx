@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import AboutLayout from "../layout/AboutLayout";
 
 const register = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <AboutLayout>
+      <div></div>
+    </AboutLayout>
+  );
+};
 
-export default register
+export default register;
