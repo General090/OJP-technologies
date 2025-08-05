@@ -52,7 +52,7 @@ const About = () => {
 
       <div className="bg-[#133f51] my-20 md:my-60 text-lg px-5 py-10 lg:px-10 space-y-5 text-white">
         <h1 className="text-2xl md:text-4xl text-[#97b088]">OJP TECHNOLOGIES LTD</h1>
-        <p>OJP TECHNLOGIES Welcome to OJP Technologies Ltd., a leading provider of innovative tech solutions and education. OJP stands for Objectively Judged Potential—a principle that defines our journey and purpose. Founded with a vision to bridge the gap between technological innovation and practical business applications, we objectively assess and unlock the potential in every project, partnership, and individual we engage with. We have grown into a trusted partner for businesses and individuals seeking excellence in the digital realm. We are passionate about equipping businesses and individuals with the skills and knowledge to thrive in an ever-evolving, tech-driven world  <Link className="text-[#97b088]">Read More...</Link></p>
+        <p>OJP TECHNLOGIES Welcome to OJP Technologies Ltd., a leading provider of innovative tech solutions and education. OJP stands for Objectively Judged Potential—a principle that defines our journey and purpose. Founded with a vision to bridge the gap between technological innovation and practical business applications, we objectively assess and unlock the potential in every project, partnership, and individual we engage with. We have grown into a trusted partner for businesses and individuals seeking excellence in the digital realm. We are passionate about equipping businesses and individuals with the skills and knowledge to thrive in an ever-evolving, tech-driven world  <Link to="/about-mission" className="text-[#97b088]">Read More...</Link></p>
       </div>
 
       <Service />

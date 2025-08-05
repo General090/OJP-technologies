@@ -102,10 +102,10 @@ const AboutLayout = ({ children }) => {
           <div>
             <h1 className="mb-5 font-bold mt-5 md:mt-0">Quick Links</h1>
             <ul className="flex flex-col space-y-5">
-              <Link className="hover:underline">Home</Link>
-              <Link className="hover:underline">Our Mission</Link>
+              <Link to="/about" className="hover:underline">Home</Link>
+              <Link to="/about-mission" className="hover:underline">Our Mission</Link>
               <Link className="hover:underline">Courses</Link>
-              <Link className="hover:underline">Contact Us</Link>
+              <Link to="/contact" className="hover:underline">Contact Us</Link>
             </ul>
           </div>
         </div>
