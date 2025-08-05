@@ -12,6 +12,11 @@ import { Link } from "react-router-dom";
 import AboutLayout from "../../layout/AboutLayout";
 import Android from "../../../assets/andriod.png"
 import Product from "../../../assets/product.png"
+import { IoMdMail } from "react-icons/io";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoLocation } from "react-icons/io5";
+import emailjs from "@emailjs/browser";
+import Location from "../contact/location"
 
 const course = () => {
   const slides = [
