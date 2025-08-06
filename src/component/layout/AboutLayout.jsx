@@ -21,8 +21,8 @@ const AboutLayout = ({ children }) => {
 
   return (
     <div>
-      <nav className="flex item-center justify-between p-10">
-        <Link to="/about">
+      <nav className="flex items-center justify-between px-4 lg:px-10 bg-white py-5 sticky top-0 z-50">
+        <Link to="/about" className="flex items-center">
           <img src={logo} className="w-42 lg:w-52" />
         </Link>
 
@@ -59,10 +59,10 @@ const AboutLayout = ({ children }) => {
         </div>
       </nav>
 
-      <div className="lg:hidden bg-[#133f51] w-full p-5">
+      <div className="lg:hidden bg-white w-full p-5">
         {isOpen && (
           <div>
-            <ul className="flex flex-col space-y-5 text-white font-semibold">
+            <ul className="flex flex-col space-y-5 text-[#133f51] mb-5 font-semibold">
               {navLinks.map(({ href, label }) => {
                 const isActive = location.pathname === href;
                 return (
@@ -81,7 +81,7 @@ const AboutLayout = ({ children }) => {
                 );
               })}
             </ul>
-            <Link to="/about-register" className="bg-[#97b088] w-full text-white mt-5 text-center py-3 rounded">
+            <Link to="/about-register" className="bg-[#133f51] w-full text-white text-center p-3 rounded">
               REGISTER NOW
             </Link>
           </div>
@@ -104,7 +104,7 @@ const AboutLayout = ({ children }) => {
             <ul className="flex flex-col space-y-5">
               <Link to="/about" className="hover:underline">Home</Link>
               <Link to="/about-mission" className="hover:underline">Our Mission</Link>
-              <Link className="hover:underline">Courses</Link>
+              <Link to="/courses" className="hover:underline">Courses</Link>
               <Link to="/contact" className="hover:underline">Contact Us</Link>
             </ul>
           </div>

@@ -27,9 +27,9 @@ const Home = () => {
             journey into tech. Participate for a chance to win exciting prizes.
           </p>
           <div className="flex gap-4">
-            <button className="bg-[#97b088] text-white md:font-semibold md:py-3 px-6 rounded">
+            <Link to="/register" className="bg-[#97b088] text-white md:font-semibold md:py-3 px-6 rounded">
               REGISTER NOW!
-            </button>
+            </Link>
 
             <Link to="/mission">
               <button className="bg-white text-[#133f51] py-3 px-6 rounded cursor-pointer">
@@ -133,9 +133,9 @@ const Home = () => {
             After successful registration, you'll receive a confirmation email
             with further details on how to participate.
           </p>
-          <button className="bg-[#97b088] py-3 px-6 rounded">
+          <Link to="/register" className="bg-[#97b088] py-3 px-6 rounded">
             Get Started!
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -156,9 +156,11 @@ const Home = () => {
 
         <div className="md:w-[40%] lg:w-[30%]">
           <h1 className="font-bold text-3xl mb-5 text-center">400 Slot Left</h1>
-          <button className="bg-[#133f51] w-[100%] py-2 text-white rounded-md">
-            Register Now!
-          </button>
+          <Link to="/register">
+            <button className="bg-[#133f51] cursor-pointer w-[100%] py-2 text-white rounded-md">
+              Register Now!
+            </button>
+          </Link>
         </div>
       </div>
     </Nav>

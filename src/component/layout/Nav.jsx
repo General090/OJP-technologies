@@ -9,8 +9,8 @@ const Nav = ({ children }) => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/mission", label: "Our Mission" },
     { href: "/about", label: "About Us" },
+    { href: "/mission", label: "Our Mission" },
     { href: "/faq", label: "FAQ" },
   ];
 
@@ -106,9 +106,9 @@ const Nav = ({ children }) => {
 
         <div>
           <ul className="flex items-center gap-5 py-6 text-[#97b088]">
-            <li>About Us</li>
-            <li>FAQ</li>
-            <li>Contact Us</li>
+            <Link to="/about">About Us</Link>
+            <Link to="/faq">FAQ</Link>
+            <Link to="/contact">Contact Us</Link>
           </ul>
         </div>
       </div>
