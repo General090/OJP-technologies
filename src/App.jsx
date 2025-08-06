@@ -3,11 +3,10 @@ import Home from "./component/Home/Home"
 import Mission from "./component/mission/OurMission";
 import About from "./component/About/About"
 import FAQ from "./component/FAQ/FAQ";
-import Register from "./component/register/Register"
+import Register from "./component/register/register"
 import AboutMission from "./component/About/mision"
 import Courses from "./component/About/courses/myCourse"
 import Contact from "./component/About/contact/contact"
-import AboutRegister from "./component/About/register"
 
 
 function App() {
@@ -25,7 +24,6 @@ function App() {
         <Route path="/courses" element={<Courses />} />
         <Route path="/about-mission" element={<AboutMission />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/about-register" element={<AboutRegister />} />
       </Routes>
     </>
   )

@@ -41,7 +41,7 @@ const AboutLayout = ({ children }) => {
           </ul>
 
           <Link
-            to="/about-register"
+            to="/register"
             className="bg-[#133f51] text-white px-5 py-3 rounded"
           >
             REGISTER NOW
@@ -81,7 +81,7 @@ const AboutLayout = ({ children }) => {
                 );
               })}
             </ul>
-            <Link to="/about-register" className="bg-[#133f51] w-full text-white text-center p-3 rounded">
+            <Link to="register" className="bg-[#133f51] w-full text-white text-center p-3 rounded">
               REGISTER NOW
             </Link>
           </div>

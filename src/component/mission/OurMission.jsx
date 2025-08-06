@@ -3,6 +3,7 @@ import Man from "../../assets/man.jpg";
 import Group from "../../assets/group.jpeg";
 import Student from "../../assets/student.jpg";
 import Child from "../../assets/child.jpeg";
+import { Link } from "react-router-dom";
 
 const OurMission = () => {
   return (
@@ -41,12 +42,12 @@ const OurMission = () => {
             </p>
 
             <div className="flex gap-5">
-              <button className="bg-[#97b088] px-5 py-3 rounded">
+              <Link to="/register" className="bg-[#97b088] px-5 py-3 rounded">
                 REGISTER NOW!
-              </button>
-              <button className="bg-white text-[#3084b8] py-3 px-5 rounded">
+              </Link>
+              <Link to="/about" className="bg-white text-[#3084b8] py-3 px-5 rounded">
                 About Us
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -81,9 +82,9 @@ const OurMission = () => {
               and organizations who believe in the power of tech education
             </p>
 
-            <button className="bg-[#133f51] py-2 px-16 rounded-md text-white">
+            <Link className="bg-[#133f51] py-2 px-16 rounded-md text-white">
               Support Us
-            </button>
+            </Link>
           </div>
         </div>
       </div>
